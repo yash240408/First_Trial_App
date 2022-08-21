@@ -28,11 +28,13 @@ class MyApp extends StatelessWidget {
         // ),
         body: Center(
           child: Container(
-            height: 100,
+            height: 300,
             width: 300,
             color: Colors.pink,
-            child: Center(
-              child: Text(" Center Here"),
+            child:const Center(
+              child:  Image(
+                image: AssetImage('images/Mahadev.jpg'),
+              ),
             ),
           ),
         ),
