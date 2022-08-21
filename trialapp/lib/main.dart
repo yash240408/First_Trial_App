@@ -9,24 +9,34 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return     MaterialApp(
-    // home: Center(
-    //   child: Text("Hello Bro"),
-    // ),
-    home: Scaffold(
-      backgroundColor: Colors.blueGrey.shade50,
-      appBar: AppBar(
-        backgroundColor: Colors.pink.shade300,
-        title: const Center(child: Text("Kedarnath Mahadev Temple")),
+    return MaterialApp(
+      // home: Center(
+      //   child: Text("Hello Bro"),
+      // ),
+      home: Scaffold(
+        backgroundColor: Colors.brown.shade500,
+        appBar: AppBar(
+          backgroundColor: Colors.pink.shade300,
+          title: const Center(child: Text("Kedarnath Mahadev Temple")),
+        ),
+        // body: const Center(
+        //   child: Image(
+        //     image: AssetImage('images/Mahadev.jpg'),
+
+        //     // NetworkImage('https://qph.cf2.quoracdn.net/main-qimg-c683e962086cace3ba1cf4a0eecbb863-lq'),
+        //   ),
+        // ),
+        body: Center(
+          child: Container(
+            height: 100,
+            width: 300,
+            color: Colors.pink,
+            child: Center(
+              child: Text(" Center Here"),
+            ),
+          ),
+        ),
       ),
-      body: const Center(
-        child: Image(
-            image:
-                // AssetImage('images/image_name.extension'),
-                NetworkImage(
-                    'https://qph.cf2.quoracdn.net/main-qimg-c683e962086cace3ba1cf4a0eecbb863-lq')),
-      ),
-    ),
-  );
+    );
   }
 }
